@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: theme("colors.black");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: theme("colors.white");
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  color: theme("colors.light-cyan");
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+
+.sub1 {
+  color: theme("colors.white");
+  font-family: Bellefair;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.sub2 {
+  color: theme("colors.white");
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+
+nav {
+  color: theme("colors.white");
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+p {
+  color: theme("colors.white");
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+
+  font-weight: 700;
+}
