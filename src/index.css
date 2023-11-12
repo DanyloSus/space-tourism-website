@@ -9,6 +9,13 @@
   padding: 0px;
 }
 
+:root,
+body {
+  overflow-x: hidden;
+
+  width: 100vw;
+}
+
 body {
   background-color: theme("colors.black");
 }
@@ -49,6 +56,7 @@ h5 {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 4.725px;
+  text-transform: uppercase;
 }
 
 .sub1 {
@@ -92,8 +100,17 @@ p {
   line-height: 32px; /* 177.778% */
 }
 
-ol li::before {
-  content: counter(my-awesome-counter) ". ";
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+ol a {
+  counter-increment: my-awesome-counter;
+}
+
+ol a::before {
+  content: "0" counter(my-awesome-counter) " ";
 
   font-weight: 700;
 }

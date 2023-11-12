@@ -1,20 +1,24 @@
 import React from "react";
+import { Component } from "react";
+import NavElement from "./NavElement";
 
-const Header = () => {
-  return (
-    <header className="flex items-center justify-between">
-      <img src="./shared/logo.svg" alt="Logo" className="w-12 h-12" />
-      <div className=" bg-white opacity-[0.2515] w-[473px] h-[1px] flex-shrink-[0]"></div>
-      <nav className=" w-[830px] h-24 backdrop-blur-[40.774227142333984px]">
-        <ol>
-          <li>Home</li>
-          <li>DESTINATION</li>
-          <li>CREW</li>
-          <li>TECHNOLOGY</li>
-        </ol>
-      </nav>
-    </header>
-  );
-};
+class Header extends Component {
+  render() {
+    return (
+      <header className="flex items-center justify-between mt-10 pl-[55px]">
+        <img src="./shared/logo.svg" alt="Logo" className="w-12 h-12" />
+        <div className=" bg-white opacity-[0.2515] w-[473px] h-[1px] ml-auto relative left-[30px]"></div>
+        <nav className=" w-[830px] h-24 backdrop-blur-[40.774227142333984px]">
+          <ol className="flex items-center justify-center gap-[50px] w-full h-full">
+            <NavElement to="/" text="Home" />
+            <NavElement to="/312" text="DESTINATION" />
+            <NavElement to="/231" text="CREW" />
+            <NavElement to="/123" text="TECHNOLOGY" />
+          </ol>
+        </nav>
+      </header>
+    );
+  }
+}
 
 export default Header;
