@@ -11,8 +11,8 @@ class Header extends Component {
         <nav className=" w-[830px] h-24 backdrop-blur-[40.774227142333984px]">
           <ol className="flex items-center justify-center gap-[50px] w-full h-full">
             <NavElement to="/" text="Home" />
-            <NavElement to="/destination/1" text="DESTINATION" />
-            <NavElement to="/crew/1" text="CREW" />
+            <NavElement to="/destination" text="DESTINATION" />
+            <NavElement to="/crew" text="CREW" />
             <NavElement to="/technology/1" text="TECHNOLOGY" />
           </ol>
         </nav>

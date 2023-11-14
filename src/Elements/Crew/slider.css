@@ -1,0 +1,41 @@
+.slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots {
+  text-align: left !important;
+}
+
+.slick-dots.slick-thumb {
+  position: absolute;
+  left: 167px;
+  bottom: 94px;
+}
+
+.slick-dots.slick-thumb li {
+  width: 15px;
+  height: 15px;
+  margin: 0 27px 0 0;
+  border-radius: 100%;
+  transition: opacity 0.5s ease-in-out;
+  background-color: white;
+  opacity: 0.25;
+}
+
+.slick-dots.slick-thumb li button::before {
+  display: none;
+}
+
+.slick-dots.slick-thumb li:last-child {
+  margin: 0 auto 0 0;
+}
+
+.slick-dots.slick-thumb li:hover {
+  opacity: 1;
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  opacity: 1;
+}
