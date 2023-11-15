@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Header from "./Elements/Header";
 import Destination from "./Pages/Destination";
 import Crew from "./Pages/Crew";
+import Technology from "./Pages/Technology";
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
           <Route path="/" element={<Home />} />
           <Route path="/destination/:id?" element={<Destination />} />
           <Route path="/crew/" element={<Crew />} />
-          <Route path="/technology/:id" element={<Home />} />
+          <Route path="/technology" element={<Technology />} />
         </Routes>
       </Router>
     );

@@ -13,7 +13,7 @@ class Header extends Component {
             <NavElement to="/" text="Home" />
             <NavElement to="/destination" text="DESTINATION" />
             <NavElement to="/crew" text="CREW" />
-            <NavElement to="/technology/1" text="TECHNOLOGY" />
+            <NavElement to="/technology" text="TECHNOLOGY" />
           </ol>
         </nav>
       </header>

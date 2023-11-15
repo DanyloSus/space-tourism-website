@@ -46,9 +46,7 @@ class Content extends Component {
               <div className="pl-[165px] pr-[137px] flex items-end justify-between h-content">
                 <div className="flex justify-between flex-col h-full pt-[76px] pb-[229px]">
                   <h5>
-                    <span className="opacity-[0.25] mr-[28px]">
-                      0{index + 1}
-                    </span>
+                    <span className="opacity-[0.25] mr-[28px]">02</span>
                     Pick your destination
                   </h5>
                   <div>
@@ -59,7 +57,7 @@ class Content extends Component {
                 </div>
                 <img
                   src={crewmate.images.png}
-                  alt={`Slide ${index + 1}`}
+                  alt={`Photo of ${crewmate.name}`}
                   className="pt-[62px]"
                 />
               </div>

@@ -92,7 +92,7 @@ nav {
 }
 
 p {
-  color: theme("colors.white");
+  color: theme("colors.light-cyan");
   font-family: Barlow;
   font-size: 18px;
   font-style: normal;

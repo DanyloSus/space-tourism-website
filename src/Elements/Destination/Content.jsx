@@ -10,9 +10,11 @@ function withParams(Component) {
 class Content extends Component {
   render() {
     let id;
+    let undef = false;
 
     if (undefined == this.props.params.id) {
       id = 0;
+      undef = true;
     } else {
       id = this.props.params.id - 1;
     }
@@ -25,18 +27,18 @@ class Content extends Component {
       <div className="px-[165px] pb-[118px] flex items-end justify-between h-content pt-[76px]">
         <div className="w-full h-full flex flex-col justify-between">
           <h5>
-            <span className="opacity-[0.25] mr-[28px]">0{id + 1}</span>Pick your
+            <span className="opacity-[0.25] mr-[28px]">01</span>Pick your
             destination
           </h5>
           <img
-            src={destination.images.webp}
+            src={`${undef ? "./destination/" : "./"}${destination.images.webp}`}
             alt={`image of ${destination.name}`}
             className=" mt-auto mx-auto block"
           />
         </div>
         <div>
           <nav className="flex gap-[35px]">
-            <NavElement to="/destination/1" text="Moon" />
+            <NavElement to="/destination" text="Moon" end />
             <NavElement to="/destination/2" text="MARS" />
             <NavElement to="/destination/3" text="EUROPA" />
             <NavElement to="/destination/4" text="TITAN" />
