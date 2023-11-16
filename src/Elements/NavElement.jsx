@@ -12,7 +12,7 @@ class NavElement extends Component {
             (isActive
               ? "border-b-[hsla(231,77%,90%,1)]"
               : "hover:border-b-[hsla(231,77%,90%,0.5021)] border-b-[hsla(231,77%,90%,0)] ") +
-            " border-b-[3px] transition-colors pb-8"
+            " border-b-[3px] transition-colors pb-8 whitespace-nowrap"
           }
         >
           {this.props.text}
