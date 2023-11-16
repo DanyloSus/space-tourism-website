@@ -40,16 +40,16 @@ class Content extends Component {
 
     return (
       <>
+        <h5 className="mr-auto ml-[165px] mt-[76px]">
+          <span className="opacity-[0.25] mr-[28px]">02</span>
+          Meet your crew
+        </h5>
         <Slider {...settings} afterChange={this.afterChangeHandler}>
           {crew.map((crewmate, index) => (
             <div key={index}>
-              <div className="flex justify-center">
-                <div className="px-5 gap-5 max-w-[1138px] flex items-end justify-between h-content overflow-x-hidden overflow-y-visible">
-                  <div className="flex justify-between flex-col h-full pt-[76px] pb-[229px]">
-                    <h5>
-                      <span className="opacity-[0.25] mr-[28px]">02</span>
-                      Pick your destination
-                    </h5>
+              <div className="flex justify-center overflow-y-hidden h-content">
+                <div className="px-5 gap-5 max-w-[1138px] w-full flex justify-between">
+                  <div className="flex justify-center flex-col h-full">
                     <div>
                       <h4>{crewmate.role}</h4>
                       <h3 className="mt-[15px] mb-[27px]">{crewmate.name}</h3>
@@ -62,9 +62,8 @@ class Content extends Component {
                     src={crewmate.images.png}
                     alt={`Photo of ${crewmate.name}`}
                     className={
-                      index === 1
-                        ? "-scale-x-100" + " pt-[62px] object-cover"
-                        : "" + " pt-[62px] object-cover"
+                      (index === 1 ? "-scale-x-100" : "") +
+                      " h-full max-w-[568px] max-h-[712px] object-cover mt-auto"
                     }
                   />
                 </div>

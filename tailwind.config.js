@@ -12,7 +12,10 @@ export default {
         "bg-inner": "inset 0 0 20px black",
       },
       height: {
-        content: "calc(100vh - 136px)",
+        content: "calc(100vh - 253px)",
+      },
+      screens: {
+        md: { maxWidth: "768px" },
       },
     },
   },

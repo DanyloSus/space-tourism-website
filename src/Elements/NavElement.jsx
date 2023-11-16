@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 class NavElement extends Component {
   render() {
     return (
-      <li className="h-24 flex items-end justify-center">
+      <li className="flex items-end justify-center">
         <NavLink
           to={this.props.to}
           end={this.props.end}
