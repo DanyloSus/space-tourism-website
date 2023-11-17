@@ -5,7 +5,7 @@ class Content extends Component {
   render() {
     return (
       <div className="flex items-end justify-center">
-        <div className="max-w-[1110px] px-5 w-full flex  items-center justify-between h-content">
+        <div className="max-w-[1110px] px-5 w-full flex  items-end justify-between h-content pb-[131px]">
           <div className="w-[444px]">
             <h5>So, you want to travel to</h5>
             <h1 className="my-6">Space</h1>
