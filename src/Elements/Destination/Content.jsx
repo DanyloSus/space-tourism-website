@@ -24,13 +24,13 @@ class Content extends Component {
     const destination = data.destinations[id];
 
     return (
-      <>
-        <h5 className="mr-auto ml-[165px] pt-[76px]  mb-[64px]">
-          <span className="opacity-[0.25] mr-[28px]">01</span>
-          Pick your destination
-        </h5>
-        <div className="flex items-center justify-center">
-          <div className="max-w-[1110px] w-full px-5 flex items-center justify-between">
+      <div className="flex flex-col justify-center ml-[1px] pt-[76px]  px-5 items-center">
+        <div className="max-w-[1110px] w-full">
+          <h5 className="mr-auto mb-16">
+            <span className="opacity-[0.25] mr-[28px]">01</span>
+            Pick your destination
+          </h5>
+          <div className="w-full flex items-center justify-between">
             <img
               src={`${undef ? "./destination/" : "./"}${
                 destination.images.webp
@@ -38,7 +38,7 @@ class Content extends Component {
               alt={`image of ${destination.name}`}
               className=" mx-auto block"
             />
-            <div>
+            <div className="max-w-[444px] w-full overflow-x-auto">
               <nav className="flex gap-[35px]">
                 <NavElement to="/destination" text="Moon" end />
                 <NavElement to="/destination/2" text="MARS" />
@@ -46,9 +46,9 @@ class Content extends Component {
                 <NavElement to="/destination/4" text="TITAN" />
               </nav>
               <h2 className="mb-[14px] mt-[37px]">{destination.name}</h2>
-              <p className="max-w-[444px]">{destination.description}</p>
+              <p className="">{destination.description}</p>
               <div className="w-full mt-[54px] mb-[28px] bg-[hsla(231,_15%,_26%,_1)] h-[3px]" />
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className="mr-auto">
                   <p className="sub2">AVG. DISTANCE</p>
                   <p className="sub1">{destination.distance}</p>
@@ -61,7 +61,7 @@ class Content extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
