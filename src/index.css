@@ -70,7 +70,7 @@ h5 {
 }
 
 .sub2 {
-  color: theme("colors.white");
+  color: theme("colors.light-cyan");
   font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
@@ -105,11 +105,11 @@ ol {
   counter-reset: my-awesome-counter;
 }
 
-ol a {
+ol > li > a {
   counter-increment: my-awesome-counter;
 }
 
-ol a::before {
+ol > li > a::before {
   content: "0" counter(my-awesome-counter) " ";
 
   font-weight: 700;

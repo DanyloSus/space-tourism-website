@@ -8,20 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import data from "../../data.json";
 
 class Content extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      currentSlide: 0,
-    };
-  }
-
-  afterChangeHandler = (currentSlide) => {
-    this.setState = { currentSlide };
-
-    console.log(currentSlide);
-  };
-
   render() {
     const settings = {
       dots: true,
@@ -40,13 +26,13 @@ class Content extends Component {
     const crew = data.crew;
 
     return (
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center md:hidden">
         <div className=" max-w-[1138px] w-full flex flex-col mt-[76px] overflow-x-visible">
           <h5 className="px-5">
             <span className="opacity-[0.25] mr-[28px]">02</span>
             Meet your crew
           </h5>
-          <Slider {...settings} afterChange={this.afterChangeHandler}>
+          <Slider {...settings}>
             {crew.map((crewmate, index) => (
               <div key={index}>
                 <div className="max-w-[1138px] w-full flex justify-center h-[654px] mx-auto px-5">

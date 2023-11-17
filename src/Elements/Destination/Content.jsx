@@ -3,7 +3,7 @@ import data from "../../data.json";
 import { useParams } from "react-router-dom";
 import NavElement from "../NavElement";
 
-function withParams(Component) {
+export function withParams(Component) {
   return (props) => <Component {...props} params={useParams()} />;
 }
 
@@ -24,7 +24,7 @@ class Content extends Component {
     const destination = data.destinations[id];
 
     return (
-      <div className="flex flex-col justify-center ml-[1px] pt-[76px]  px-5 items-center">
+      <div className="flex flex-col justify-center ml-[1px] pt-[76px]  px-5 items-center md:hidden">
         <div className="max-w-[1110px] w-full">
           <h5 className="mr-auto mb-16">
             <span className="opacity-[0.25] mr-[28px]">01</span>

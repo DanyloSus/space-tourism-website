@@ -15,7 +15,7 @@ class Content extends Component {
       " w-20 h-20 flex justify-center items-center rounded-full cursor-pointer transition-color";
 
     return (
-      <div className="w-full flex flex-col items-end pl-5">
+      <div className="w-full flex flex-col items-end pl-5 md:hidden">
         <div className="max-w-[1275px] w-full">
           <h5 className="mr-auto mt-[76px] mb-[26px]">
             <span className="opacity-[0.25] mr-[28px]">03</span>

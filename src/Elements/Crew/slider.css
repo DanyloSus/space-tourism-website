@@ -10,7 +10,6 @@
 
 .slick-dots.slick-thumb {
   position: absolute;
-  left: 167px;
   bottom: 94px;
 }
 
@@ -38,4 +37,21 @@
 
 .slick-dots.slick-thumb li.slick-active {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-dots.slick-thumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center !important;
+    width: auto;
+    height: auto;
+  }
+
+  .slick-dots.slick-thumb li:last-child {
+    margin: 0 0 0 0;
+  }
 }

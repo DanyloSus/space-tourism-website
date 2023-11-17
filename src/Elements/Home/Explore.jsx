@@ -7,7 +7,7 @@ class Explore extends Component {
     return (
       <div className={classes.explore}>
         <div className={classes.bg} />
-        <h4 className="w-[274px] h-[274px] rounded-full bg-white text-black flex items-center justify-center">
+        <h4 className="w-[274px] h-[274px] rounded-full bg-white text-black flex items-center justify-center md:w-[242px] md:h-[242px]">
           Explore
         </h4>
       </div>

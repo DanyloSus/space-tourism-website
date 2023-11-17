@@ -1,9 +1,9 @@
 .explore {
-  @apply w-[274px] h-[274px] flex items-center justify-center relative cursor-pointer;
+  @apply w-[274px] h-[274px] flex items-center justify-center relative cursor-pointer md:w-[242px] md:h-[242px];
 }
 
 .bg {
-  @apply w-[274px] h-[274px] rounded-full opacity-[0.1036] bg-white transition-all absolute cursor-default;
+  @apply w-[274px] h-[274px] rounded-full opacity-[0.1036] bg-white transition-all absolute cursor-default md:w-[242px] md:h-[242px];
 }
 
 .explore:hover .bg {
