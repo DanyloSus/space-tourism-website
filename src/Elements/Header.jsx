@@ -1,9 +1,17 @@
 import React from "react";
 import { Component } from "react";
 import NavElement from "./NavElement";
+import { connect } from "react-redux";
+import HamMenu from "./HamMenu";
 
 class Header extends Component {
+  handleChange = () => {
+    this.props.dispatch({ type: "CHANGE" });
+  };
+
   render() {
+    const { value } = this.props;
+
     return (
       <header className="flex items-center justify-between pl-[55px] pt-10 md:pt-0 md:pl-[39px] md:overflow-x-auto sm:px-6 sm:pt-6">
         <img
@@ -24,10 +32,16 @@ class Header extends Component {
           src="./shared/icon-hamburger.svg"
           alt="Hamburger"
           className="w-6 h-[21px] sm:block hidden"
+          onClick={this.handleChange}
         />
+        <HamMenu />
       </header>
     );
   }
 }
 
-export default Header;
+const mapStateToProps = (state) => ({
+  value: state.isHam.value,
+});
+
+export default connect(mapStateToProps)(Header);
