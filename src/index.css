@@ -100,6 +100,12 @@ p {
   line-height: 32px; /* 177.778% */
 }
 
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 15px;
+  }
+}
+
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;

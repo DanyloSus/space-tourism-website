@@ -4,7 +4,7 @@ import { withParams } from "./Content";
 import data from "../../data.json";
 import { NavLink } from "react-router-dom";
 
-class TabContent extends Component {
+class MobContent extends Component {
   render() {
     let id;
     let undef = false;
@@ -21,18 +21,18 @@ class TabContent extends Component {
     const destination = data.destinations[id];
 
     return (
-      <div className="flex flex-col justify-between items-center text-center sm:hidden">
-        <h5 className="mr-auto mb-16 ml-[38px]  text-[20px] mt-10">
-          <span className="opacity-[0.25] mr-[28px]">01</span>
-          Pick your destination
-        </h5>
-        <div className="flex-col items-center justify-between">
+      <div className="text-center  w-full flex  justify-center">
+        <div className="max-w-[327px] w-full flex flex-col items-center">
+          <h5 className="text-[16px] mt-6">
+            <span className="opacity-[0.25] mr-[18px] font-bold">01</span>
+            Pick your destination
+          </h5>
           <img
             src={`${undef ? "./destination/" : "./"}${destination.images.webp}`}
             alt={`image of ${destination.name}`}
-            className=" mx-auto block max-w-[300px] h-[300px] object-cover"
+            className=" mx-auto block max-w-[170px] h-[170px] object-cover mt-8 mb-[26px]"
           />
-          <nav className="flex gap-9 mt-[53px] mb-8 justify-center">
+          <nav className="flex gap-[26px] items-center justify-center">
             <NavLink
               to="/destination"
               end
@@ -40,7 +40,7 @@ class TabContent extends Component {
                 (isActive
                   ? "border-b-[hsla(231,77%,90%,1)]"
                   : "hover:border-b-[hsla(231,77%,90%,0.5021)] border-b-[hsla(231,77%,90%,0)] text-light-cyan hover:text-white") +
-                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 "
+                " border-b-[3px] transition-colorswhitespace-nowrap font-normal pb-3 text-[14px] "
               }
             >
               MOON
@@ -52,7 +52,7 @@ class TabContent extends Component {
                 (isActive
                   ? "border-b-[hsla(231,77%,90%,1)]"
                   : "hover:border-b-[hsla(231,77%,90%,0.5021)] border-b-[hsla(231,77%,90%,0)] text-light-cyan hover:text-white") +
-                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 "
+                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 text-[14px] "
               }
             >
               MARS
@@ -64,7 +64,7 @@ class TabContent extends Component {
                 (isActive
                   ? "border-b-[hsla(231,77%,90%,1)]"
                   : "hover:border-b-[hsla(231,77%,90%,0.5021)] border-b-[hsla(231,77%,90%,0)] text-light-cyan hover:text-white") +
-                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 "
+                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 text-[14px] "
               }
             >
               EUROPA
@@ -76,18 +76,16 @@ class TabContent extends Component {
                 (isActive
                   ? "border-b-[hsla(231,77%,90%,1)]"
                   : "hover:border-b-[hsla(231,77%,90%,0.5021)] border-b-[hsla(231,77%,90%,0)] text-light-cyan hover:text-white") +
-                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 "
+                " border-b-[3px] transition-colorswhitespace-nowrap font-normal  pb-3 text-[14px] "
               }
             >
               TITAN
             </NavLink>
           </nav>
-          <h2 className="text-[80px]">{destination.name}</h2>
-          <p className="max-w-[573px] w-full mt-2 mb-12">
-            {destination.description}
-          </p>
-          <div className="w-full h-[1px] bg-[#383B4B] mb-7" />
-          <div className="w-full flex items-center justify-around gap-[11px] mb-[62px]">
+          <h3 className="mt-5 mb-[1px]">{destination.name}</h3>
+          <p>{destination.description}</p>
+          <div className="w-full h-[1px] my-8 bg-[hsla(231,_15%,_26%,_1)]" />
+          <div className="w-full flex flex-col items-center gap-8 mb-[58px]">
             <div className="flex flex-col items-center justify-center gap-3 max-w-[223px] w-full">
               <span className="sub2 w-full">AVG. DISTANCE</span>
               <span className="sub1 w-full">{destination.distance}</span>
@@ -103,4 +101,4 @@ class TabContent extends Component {
   }
 }
 
-export default withParams(TabContent);
+export default withParams(MobContent);

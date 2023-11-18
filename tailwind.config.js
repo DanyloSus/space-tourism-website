@@ -15,7 +15,8 @@ export default {
         content: "calc(100vh - 136px)",
       },
       screens: {
-        md: { max: "768px" },
+        md: { min: "376px", max: "768px" },
+        sm: { max: "376px" },
       },
     },
   },

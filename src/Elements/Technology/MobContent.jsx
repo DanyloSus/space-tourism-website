@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import data from "../../data.json";
 
-class TabContent extends Component {
+class MobContent extends Component {
   constructor() {
     super();
     this.state = { number: 0 };
@@ -12,21 +12,21 @@ class TabContent extends Component {
     const technology = data.technology[this.state.number];
 
     const btnClasses =
-      " w-[60px] h-[60px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[24px]";
+      " w-[40px] h-[40px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[16px]";
 
     return (
-      <div className="hidden md:flex flex-col justify-between text-center items-center sm:hidden">
-        <h5 className="mr-auto ml-[38px] mt-10 text-[20px]">
-          <span className="opacity-[0.25] mr-[28px]">03</span>
+      <div className="text-center  w-full flex flex-col justify-center items-center pb-[81px]">
+        <h5 className="text-[16px] mt-6">
+          <span className="opacity-[0.25] mr-[18px] font-bold">03</span>
           SPACE LAUNCH 101
         </h5>
         <img
           src={technology.images.landscape}
           alt={technology.name}
-          className="w-screen h-[310px] mt-[60px] object-cover"
+          className="w-screen h-[170px] mt-8 mb-[34px] object-cover"
         />
-        <div className="max-w-[458px] w-full flex flex-col items-center">
-          <div className="flex gap-4 items-center justify-center w-full mt-14 mb-11">
+        <div className="max-w-[327px] w-full flex flex-col items-center">
+          <div className="flex gap-4 items-center justify-center w-full mb-[26px]">
             <h4
               className={
                 (this.state.number === 0
@@ -61,8 +61,8 @@ class TabContent extends Component {
               3
             </h4>
           </div>
-          <span className="sub2 text-[16px]">THE TERMINOLOGY…</span>
-          <h4 className="text-[40px] my-4">{technology.name}</h4>
+          <span className="sub2">THE TERMINOLOGY…</span>
+          <h4 className="text-[24px] mt-[9px] mb-4">{technology.name}</h4>
           <p>{technology.description}</p>
         </div>
       </div>
@@ -70,4 +70,4 @@ class TabContent extends Component {
   }
 }
 
-export default TabContent;
+export default MobContent;

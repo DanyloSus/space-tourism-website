@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import BG from "../Elements/BG";
 import Content from "../Elements/Crew/Content";
 import TabContent from "../Elements/Crew/TabContent";
+import MobContent from "../Elements/Crew/MobContent";
 
 class Crew extends Component {
   render() {
@@ -10,6 +11,7 @@ class Crew extends Component {
         <BG src="../crew/background-crew" alt="background crew" />
         <Content />
         <TabContent />
+        <MobContent />
       </React.Fragment>
     );
   }

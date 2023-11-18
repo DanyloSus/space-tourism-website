@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import BG from "../Elements/BG";
 import Content from "../Elements/Destination/Content";
 import TabContent from "../Elements/Destination/TabContent";
+import MobContent from "../Elements/Destination/MobContent";
 
 class Destination extends Component {
   render() {
@@ -13,6 +14,7 @@ class Destination extends Component {
         />
         <Content />
         <TabContent />
+        <MobContent />
       </React.Fragment>
     );
   }

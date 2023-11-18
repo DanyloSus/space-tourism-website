@@ -26,7 +26,7 @@ class Content extends Component {
     const crew = data.crew;
 
     return (
-      <div className="flex items-center justify-center md:hidden">
+      <div className="flex items-center justify-center md:hidden sm:hidden">
         <div className=" max-w-[1138px] w-full flex flex-col mt-[76px] overflow-x-visible">
           <h5 className="px-5">
             <span className="opacity-[0.25] mr-[28px]">02</span>

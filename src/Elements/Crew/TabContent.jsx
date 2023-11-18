@@ -22,7 +22,7 @@ class TabContent extends Component {
     const crew = data.crew;
 
     return (
-      <div className="flex flex-col justify-between text-center">
+      <div className="md:flex hidden flex-col justify-between text-center sm:hidden">
         <h5 className="mr-auto mb-15 ml-[38px] mt-10 mb-[60px] text-[20px]">
           <span className="opacity-[0.25] mr-[28px]">02</span>
           Meet your crew

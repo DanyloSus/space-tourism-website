@@ -1,11 +1,11 @@
 .explore {
-  @apply w-[274px] h-[274px] flex items-center justify-center relative cursor-pointer md:w-[242px] md:h-[242px];
+  @apply w-[274px] h-[274px] flex items-center justify-center relative cursor-pointer md:w-[242px] md:h-[242px] sm:h-[150px] sm:w-[150px];
 }
 
 .bg {
-  @apply w-[274px] h-[274px] rounded-full opacity-[0.1036] bg-white transition-all absolute cursor-default md:w-[242px] md:h-[242px];
+  @apply w-[274px] h-[274px] rounded-full opacity-[0.1036] bg-white transition-all absolute cursor-default md:w-[242px] md:h-[242px] sm:h-[150px] sm:w-[150px];
 }
 
 .explore:hover .bg {
-  @apply w-[450px] h-[450px];
+  @apply w-[450px] h-[450px] sm:h-[250px] sm:w-[250px];
 }

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Explore from "./Explore";
 
-class TabContent extends Component {
+class MobContent extends Component {
   render() {
     return (
-      <div className="hidden flex-col items-center pt-[106px] md:flex  w-screen text-center h-full overflox-y-visible pb-[104px] sm:hidden">
-        <div className="max-w-[444px] w-full mb-[156px]">
-          <h5 className="text-[20px]">SO, YOU WANT TO TRAVEL TO</h5>
-          <h2 className="my-6">SPACE</h2>
+      <div className="sm:flex hidden text-center justify-between mt-12 flex-col items-center h-max pb-12">
+        <div className="max-w-[327px] w-full px-5 mb-20">
+          <span className="sub2 text-[16px]">SO, YOU WANT TO TRAVEL TO</span>
+          <h2 className="text-[80px] my-4">SPACE</h2>
           <p>
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
@@ -21,4 +21,4 @@ class TabContent extends Component {
   }
 }
 
-export default TabContent;
+export default MobContent;
