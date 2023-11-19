@@ -1,8 +1,10 @@
+// import libraries
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 class NavElement extends Component {
   render() {
+    // return custome NavLink
     return (
       <>
         <li className="flex items-end justify-center md:hidden">

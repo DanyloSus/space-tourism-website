@@ -1,21 +1,25 @@
+// import libraries
 import React, { Component } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+// import data
 import data from "../../data.json";
 
 class TabContent extends Component {
   constructor() {
+    // create constructor for states
     super();
-    this.state = { number: 0 };
+    this.state = { number: 0 }; // a state of technology's number
   }
 
   render() {
-    const technology = data.technology[this.state.number];
+    const technology = data.technology[this.state.number]; // a variable of the technology
 
     const btnClasses =
-      " w-[60px] h-[60px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[24px]";
+      " w-[60px] h-[60px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[24px]"; // classes for buttons
 
     return (
+      // return a tablet technology page
       <AnimatePresence>
         <div className="hidden md:flex flex-col justify-between text-center items-center sm:hidden  overflow-hidden">
           <h5 className="mr-auto ml-[38px] mt-10 text-[20px]">

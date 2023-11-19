@@ -1,11 +1,16 @@
+// import libraries
 import React, { Component } from "react";
+
+// import elements
 import Explore from "./Explore";
 
+// import a style object
 import classes from "./animations.module.css";
 
 class Content extends Component {
   render() {
     return (
+      // return a desktop home page
       <div className="flex items-end justify-center md:hidden sm:hidden">
         <div className="max-w-[1110px] px-5 w-full flex  items-end justify-between h-content pb-[131px]">
           <div className="w-[444px]">

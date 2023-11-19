@@ -1,22 +1,25 @@
+// import libraries
 import React, { Component } from "react";
-
-import data from "../../data.json";
-
 import { AnimatePresence, motion } from "framer-motion";
+
+// import data
+import data from "../../data.json";
 
 class Content extends Component {
   constructor() {
+    // create constructor for states
     super();
-    this.state = { number: 0 };
+    this.state = { number: 0 }; // a state of technology's number
   }
 
   render() {
-    const technologies = data.technology;
+    const technologies = data.technology; // a variable of technologies
 
     const btnClasses =
-      " w-20 h-20 flex justify-center items-center rounded-full cursor-pointer transition-color";
+      " w-20 h-20 flex justify-center items-center rounded-full cursor-pointer transition-color"; // classes for buttons
 
     return (
+      // return a desktop technology page
       <AnimatePresence>
         <div className="w-full flex flex-col items-end pl-5 md:hidden overflow-hidden sm:hidden">
           <div className="max-w-[1275px] w-full">

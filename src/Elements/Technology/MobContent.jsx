@@ -1,21 +1,25 @@
+// import libraries
 import React, { Component } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+// import data
 import data from "../../data.json";
 
 class MobContent extends Component {
   constructor() {
+    // create constructor for states
     super();
-    this.state = { number: 0 };
+    this.state = { number: 0 }; // a state of technology's number
   }
 
   render() {
-    const technology = data.technology[this.state.number];
+    const technology = data.technology[this.state.number]; // a variable of the technology
 
     const btnClasses =
-      " w-[40px] h-[40px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[16px]";
+      " w-[40px] h-[40px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[16px]"; // classes for buttons
 
     return (
+      // return a mobile technology page
       <AnimatePresence>
         <div className="text-center  w-full sm:flex hidden flex-col justify-center items-center pb-[81px] overflow-hidden">
           <h5 className="text-[16px] mt-6">

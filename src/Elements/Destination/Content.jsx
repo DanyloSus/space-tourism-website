@@ -1,30 +1,38 @@
+// import libraries
 import React, { Component } from "react";
-import data from "../../data.json";
 import { useParams } from "react-router-dom";
+
+// import data
+import data from "../../data.json";
+
+// import elements
 import NavElement from "../NavElement";
+
+// import styles
 import "./animation.scss";
 
 export function withParams(Component) {
+  // create and export a function for work classes components with useParams
   return (props) => <Component {...props} params={useParams()} />;
 }
 
 class Content extends Component {
   render() {
-    let id;
-    let undef = false;
+    let id; // create a null id variable
+    let undef = false; // create a variable of is the param undefined
 
     if (undefined == this.props.params.id) {
-      id = 0;
-      undef = true;
+      // if the param is undefined
+      id = 0; // set id of destination 0
+      undef = true; // set undefined is
     } else {
-      id = this.props.params.id - 1;
+      id = this.props.params.id - 1; // set id of destination
     }
 
-    console.log(id);
-
-    const destination = data.destinations[id];
+    const destination = data.destinations[id]; // set destination
 
     return (
+      // return a desktop destination page
       <div className="flex flex-col justify-center ml-[1px] pt-[76px]  px-5 items-center md:hidden sm:hidden overflow-hidden">
         <div className="max-w-[1110px] w-full">
           <h5 className="mr-auto mb-16">

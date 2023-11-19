@@ -1,28 +1,31 @@
+// import libraries
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { withParams } from "./Content";
 
+// import data
 import data from "../../data.json";
-import { NavLink } from "react-router-dom";
 
+// import styles
 import "./animation.scss";
 
 class MobContent extends Component {
   render() {
-    let id;
-    let undef = false;
+    let id; // create a null id variable
+    let undef = false; // create a variable of is the param undefined
 
     if (undefined == this.props.params.id) {
-      id = 0;
-      undef = true;
+      // if the param is undefined
+      id = 0; // set id of destination 0
+      undef = true; // set undefined is
     } else {
-      id = this.props.params.id - 1;
+      id = this.props.params.id - 1; // set id of destination
     }
 
-    console.log(id);
-
-    const destination = data.destinations[id];
+    const destination = data.destinations[id]; // set destination
 
     return (
+      // return a mobile destination page
       <div className="text-center  w-full sm:flex  justify-center hidden">
         <div className="max-w-[327px] w-full flex flex-col items-center">
           <h5 className="text-[16px] mt-6">

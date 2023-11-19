@@ -1,6 +1,8 @@
+// import libraries
 import { Component } from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
+// import pages
 import Home from "./Pages/Home";
 import Header from "./Elements/Header";
 import Destination from "./Pages/Destination";
@@ -10,6 +12,7 @@ import Technology from "./Pages/Technology";
 class App extends Component {
   render() {
     return (
+      // return an old variant of react-router
       <Router>
         <Header />
         <Routes>

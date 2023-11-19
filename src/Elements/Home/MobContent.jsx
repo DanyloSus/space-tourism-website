@@ -1,11 +1,16 @@
+// import libraries
 import React, { Component } from "react";
+
+// import elements
 import Explore from "./Explore";
 
+// import a style object
 import classes from "./animations.module.css";
 
 class MobContent extends Component {
   render() {
     return (
+      // return a mobile home page
       <div className="sm:flex hidden text-center justify-between mt-12 flex-col items-center h-max pb-12">
         <div className="max-w-[327px] w-full px-5 mb-20">
           <span className={classes.left + " sub2 text-[16px]"}>

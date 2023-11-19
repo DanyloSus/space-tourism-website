@@ -1,3 +1,4 @@
+// import libraries
 import { AnimatePresence, motion } from "framer-motion";
 import React, { Component } from "react";
 import { createPortal } from "react-dom";
@@ -7,14 +8,14 @@ import { NavLink } from "react-router-dom";
 class HamMenu extends Component {
   handleChange = () => {
     this.props.dispatch({ type: "CHANGE" });
-  };
-  render() {
-    const { value } = this.props;
-    const hamRoot = document.getElementById("hamburger");
+  }; // call a CHANGE action
 
-    console.log(hamRoot);
+  render() {
+    const { value } = this.props; // get value from redux store
+    const hamRoot = document.getElementById("hamburger"); // get a hamburger element
 
     return createPortal(
+      // create portal to the hamburger element
       <AnimatePresence>
         {value === true && (
           <motion.div
@@ -87,6 +88,7 @@ class HamMenu extends Component {
 }
 
 const mapStateToProps = (state) => ({
+  // create connect function for get a redux store value
   value: state.isHam.value,
 });
 

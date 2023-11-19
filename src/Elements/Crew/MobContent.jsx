@@ -1,31 +1,36 @@
+// import libraries
 import React, { Component } from "react";
 import Slider from "react-slick";
 
+// import styles
 import "./slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// import data
 import data from "../../data.json";
 
 class MobContent extends Component {
   render() {
     const settings = {
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      // create settings
+      dots: true, // set dots
+      infinite: true, // infinite scroll
+      slidesToShow: 1, // shows only one slide
+      slidesToScroll: 1, // scroll only one slide
       initialSlide: 0,
-      speed: 500,
-      arrows: false,
-      lazyLoad: true,
+      speed: 500, // speed of scroll
+      arrows: false, // delete arrows
+      lazyLoad: true, // lazy load of images
       adaptiveHeight: true,
 
-      dotsClass: "slick-dots slick-thumb",
+      dotsClass: "slick-dots slick-thumb", // dots classes
     };
 
-    const crew = data.crew;
+    const crew = data.crew; // get crea data
 
     return (
+      // return a mobile crew page
       <div className="sm:flex hidden text-center w-full  justify-center px-5 pb-[104px]">
         <div className="max-w-[327px] w-full flex flex-col">
           <h5 className="text-[16px] mt-6 mb-8">

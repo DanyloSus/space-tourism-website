@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class BG extends Component {
   render() {
     return (
+      // return bg which has a desktop, a tablet and a mobile backgrounds
       <>
         <img
           src={`./${this.props.src}` + "-desktop.jpg"}

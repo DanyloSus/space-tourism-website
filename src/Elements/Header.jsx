@@ -1,7 +1,6 @@
 import React from "react";
 import { Component } from "react";
 import NavElement from "./NavElement";
-import { connect } from "react-redux";
 import HamMenu from "./HamMenu";
 
 class Header extends Component {
@@ -10,8 +9,6 @@ class Header extends Component {
   };
 
   render() {
-    const { value } = this.props;
-
     return (
       <header className="flex items-center justify-between pl-[55px] pt-10 md:pt-0 md:pl-[39px] md:overflow-x-auto sm:px-6 sm:pt-6">
         <img
@@ -40,8 +37,4 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  value: state.isHam.value,
-});
-
-export default connect(mapStateToProps)(Header);
+export default Header;

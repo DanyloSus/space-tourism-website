@@ -1,11 +1,16 @@
+// import libraries
 import React, { Component } from "react";
+
+// import elements
 import Explore from "./Explore";
 
+// import a style object
 import classes from "./animations.module.css";
 
 class TabContent extends Component {
   render() {
     return (
+      // return a mobile home page
       <div className="hidden flex-col items-center pt-[106px] md:flex  w-screen text-center h-full overflox-y-visible pb-[104px] sm:hidden">
         <div className="max-w-[444px] w-full mb-[156px]">
           <h5 className={classes.left + " text-[20px]"}>
