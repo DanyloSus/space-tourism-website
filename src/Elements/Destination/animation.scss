@@ -1,0 +1,32 @@
+.img_anim {
+    animation: rotation 300s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@for $i from 1 through 6 {
+    .left_anim:nth-child(#{$i}) {
+        animation: left 1s ease-in-out #{$i*0.5}s;
+        animation-fill-mode: both;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@keyframes left {
+    0%{
+        left: 25px;
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}

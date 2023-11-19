@@ -4,6 +4,8 @@ import { withParams } from "./Content";
 import data from "../../data.json";
 import { NavLink } from "react-router-dom";
 
+import "./animation.scss";
+
 class MobContent extends Component {
   render() {
     let id;
@@ -30,9 +32,9 @@ class MobContent extends Component {
           <img
             src={`${undef ? "./destination/" : "./"}${destination.images.webp}`}
             alt={`image of ${destination.name}`}
-            className=" mx-auto block max-w-[170px] h-[170px] object-cover mt-8 mb-[26px]"
+            className=" mx-auto block max-w-[170px] h-[170px] object-cover mt-8 mb-[26px] img_anim"
           />
-          <nav className="flex gap-[26px] items-center justify-center">
+          <nav className="flex gap-[26px] items-center justify-center left_anim">
             <NavLink
               to="/destination"
               end
@@ -82,10 +84,10 @@ class MobContent extends Component {
               TITAN
             </NavLink>
           </nav>
-          <h3 className="mt-5 mb-[1px]">{destination.name}</h3>
-          <p>{destination.description}</p>
+          <h3 className="mt-5 mb-[1px]  left_anim">{destination.name}</h3>
+          <p className=" left_anim">{destination.description}</p>
           <div className="w-full h-[1px] my-8 bg-[hsla(231,_15%,_26%,_1)]" />
-          <div className="w-full flex flex-col items-center gap-8 mb-[58px]">
+          <div className="w-full flex flex-col items-center gap-8 mb-[58px] left_anim">
             <div className="flex flex-col items-center justify-center gap-3 max-w-[223px] w-full">
               <span className="sub2 w-full">AVG. DISTANCE</span>
               <span className="sub1 w-full">{destination.distance}</span>
