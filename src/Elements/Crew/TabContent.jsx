@@ -32,14 +32,18 @@ class TabContent extends Component {
             <div key={index}>
               <div className="flex flex-col items-center max-w-[458px] w-full mx-auto justify-between h-[804px]">
                 <div className="z-10">
-                  <span className="sub1 opacity-[0.4994]">{crewmate.role}</span>
-                  <h3 className="text-[40px] mb-4 mt-2">{crewmate.name}</h3>
-                  <p>{crewmate.bio}</p>
+                  <span className="sub1 opacity-[0.4994] top_anim">
+                    {crewmate.role}
+                  </span>
+                  <h3 className="text-[40px] mb-4 mt-2 top_anim">
+                    {crewmate.name}
+                  </h3>
+                  <p className="top_anim">{crewmate.bio}</p>
                 </div>
                 <img
                   src={crewmate.images.png}
                   alt={`Photo of ${crewmate.name}`}
-                  className="max-h-[532px] h-full object-cover mt-10 -z-20"
+                  className="max-h-[532px] h-full object-cover mt-10 -z-20 top_anim"
                 />
               </div>
             </div>

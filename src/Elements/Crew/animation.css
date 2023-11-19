@@ -1,0 +1,15 @@
+.top_anim {
+  animation: top 1s ease-in-out both;
+  position: relative;
+}
+
+@keyframes top {
+  0% {
+    top: 25px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

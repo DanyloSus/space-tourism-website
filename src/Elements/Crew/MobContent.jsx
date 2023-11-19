@@ -39,14 +39,16 @@ class MobContent extends Component {
                   <img
                     src={crewmate.images.webp}
                     alt={`Photo of ${crewmate.name}`}
-                    className="-z-20 max-h-[222px] h-full mx-auto"
+                    className="top_anim -z-20 max-h-[222px] h-full mx-auto"
                   />
                   <div className="w-full h-1 bg-[hsla(231,_15%,_26%,_1)] mb-[74px]" />
-                  <span className="sub1 opacity-[0.4994] text-[16px]">
+                  <span className="sub1 opacity-[0.4994] text-[16px] top_anim">
                     {crewmate.role}
                   </span>
-                  <h3 className="text-[24px] mb-4 mt-2">{crewmate.name}</h3>
-                  <p>{crewmate.bio}</p>
+                  <h3 className="text-[24px] mb-4 mt-2 top_anim">
+                    {crewmate.name}
+                  </h3>
+                  <p className="top_anim">{crewmate.bio}</p>
                 </div>
               </div>
             ))}

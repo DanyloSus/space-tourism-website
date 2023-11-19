@@ -11,7 +11,7 @@
     }
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 10 {
     .left_anim:nth-child(#{$i}) {
         animation: left 1s ease-in-out #{$i*0.5}s;
         animation-fill-mode: both;
