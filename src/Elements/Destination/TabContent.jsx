@@ -21,7 +21,7 @@ class TabContent extends Component {
     const destination = data.destinations[id];
 
     return (
-      <div className="flex flex-col justify-between items-center text-center sm:hidden">
+      <div className="md:flex flex-col justify-between items-center text-center hidden">
         <h5 className="mr-auto mb-16 ml-[38px]  text-[20px] mt-10">
           <span className="opacity-[0.25] mr-[28px]">01</span>
           Pick your destination

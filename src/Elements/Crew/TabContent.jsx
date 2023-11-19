@@ -39,7 +39,7 @@ class TabContent extends Component {
                 <img
                   src={crewmate.images.png}
                   alt={`Photo of ${crewmate.name}`}
-                  className=" mt-10 -z-20"
+                  className="max-h-[532px] h-full object-cover mt-10 -z-20"
                 />
               </div>
             </div>

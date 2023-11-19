@@ -21,7 +21,7 @@ class MobContent extends Component {
     const destination = data.destinations[id];
 
     return (
-      <div className="text-center  w-full flex  justify-center">
+      <div className="text-center  w-full sm:flex  justify-center hidden">
         <div className="max-w-[327px] w-full flex flex-col items-center">
           <h5 className="text-[16px] mt-6">
             <span className="opacity-[0.25] mr-[18px] font-bold">01</span>

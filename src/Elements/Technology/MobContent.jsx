@@ -15,7 +15,7 @@ class MobContent extends Component {
       " w-[40px] h-[40px] flex justify-center items-center rounded-full cursor-pointer transition-color text-[16px]";
 
     return (
-      <div className="text-center  w-full flex flex-col justify-center items-center pb-[81px]">
+      <div className="text-center  w-full sm:flex hidden flex-col justify-center items-center pb-[81px]">
         <h5 className="text-[16px] mt-6">
           <span className="opacity-[0.25] mr-[18px] font-bold">03</span>
           SPACE LAUNCH 101

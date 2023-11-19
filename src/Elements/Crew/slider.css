@@ -1,3 +1,20 @@
+/* Add this CSS to your existing styles or create a new stylesheet */
+.crewmate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px; /* Adjust the padding as needed */
+}
+
+.crewmate-content {
+  flex: 1; /* Allow the content to grow and take available space */
+}
+
+.crewmate-image {
+  flex-shrink: 0; /* Prevent the image from growing and maintaining its size */
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
 .slick-track {
   display: flex;
   justify-content: center;
@@ -11,6 +28,7 @@
 .slick-dots.slick-thumb {
   position: absolute;
   bottom: 94px;
+  left: 20px;
 }
 
 .slick-dots.slick-thumb li {
@@ -42,7 +60,7 @@
 @media screen and (max-width: 768px) {
   .slick-dots.slick-thumb {
     position: absolute;
-    top: 50%;
+    bottom: 512px;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -58,6 +76,6 @@
 
 @media screen and (max-width: 375px) {
   .slick-dots.slick-thumb {
-    top: 315px;
+    top: 255px;
   }
 }
