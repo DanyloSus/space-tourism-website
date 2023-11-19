@@ -18,7 +18,7 @@ class Content extends Component {
 
     return (
       <AnimatePresence>
-        <div className="w-full flex flex-col items-end pl-5 md:hidden sm:hidden">
+        <div className="w-full flex flex-col items-end pl-5 md:hidden overflow-hidden sm:hidden">
           <div className="max-w-[1275px] w-full">
             <h5 className="mr-auto mt-[76px] mb-[26px]">
               <span className="opacity-[0.25] mr-[28px]">03</span>

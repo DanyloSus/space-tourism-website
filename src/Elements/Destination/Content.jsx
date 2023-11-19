@@ -39,7 +39,7 @@ class Content extends Component {
               alt={`image of ${destination.name}`}
               className=" mx-auto block img_anim"
             />
-            <div className="max-w-[444px] w-full overflow-x-auto">
+            <div className="max-w-[444px] w-full overflow-hidden">
               <nav className="flex gap-[35px] left_anim">
                 <NavElement to="/destination" text="Moon" end />
                 <NavElement to="/destination/2" text="MARS" />
@@ -51,7 +51,7 @@ class Content extends Component {
               </h2>
               <p className="left_anim">{destination.description}</p>
               <div className="w-full mt-[54px] mb-[28px] bg-[hsla(231,_15%,_26%,_1)] h-[3px]" />
-              <div className="flex flex-wrap left_anim w-full  left_anim">
+              <div className="flex flex-wrap left_anim w-full left_anim overflow-hidden">
                 <div className="mr-auto">
                   <p className="sub2">AVG. DISTANCE</p>
                   <p className="sub1">{destination.distance}</p>

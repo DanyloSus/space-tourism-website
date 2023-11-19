@@ -17,7 +17,7 @@ class TabContent extends Component {
 
     return (
       <AnimatePresence>
-        <div className="hidden md:flex flex-col justify-between text-center items-center sm:hidden">
+        <div className="hidden md:flex flex-col justify-between text-center items-center sm:hidden  overflow-hidden">
           <h5 className="mr-auto ml-[38px] mt-10 text-[20px]">
             <span className="opacity-[0.25] mr-[28px]">03</span>
             SPACE LAUNCH 101

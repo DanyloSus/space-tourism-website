@@ -17,7 +17,7 @@ class MobContent extends Component {
 
     return (
       <AnimatePresence>
-        <div className="text-center  w-full sm:flex hidden flex-col justify-center items-center pb-[81px]">
+        <div className="text-center  w-full sm:flex hidden flex-col justify-center items-center pb-[81px] overflow-hidden">
           <h5 className="text-[16px] mt-6">
             <span className="opacity-[0.25] mr-[18px] font-bold">03</span>
             SPACE LAUNCH 101
