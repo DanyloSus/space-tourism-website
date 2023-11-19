@@ -1,0 +1,37 @@
+.left {
+  animation-name: left;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  position: relative;
+  left: 0;
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    left: 25px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.right {
+  animation-name: right;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  position: relative;
+  right: 0;
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    right: 25px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
