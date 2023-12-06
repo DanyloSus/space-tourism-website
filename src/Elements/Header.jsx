@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import { connect } from "react-redux";
 import NavElement from "./NavElement";
 import HamMenu from "./HamMenu";
 
@@ -37,4 +38,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default connect()(Header);
